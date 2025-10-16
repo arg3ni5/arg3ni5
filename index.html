@@ -1,191 +1,246 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es-CR">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fabián Chinchilla Mayorga — CV</title>
-  <meta name="description" content="CV de Fabián Chinchilla Mayorga: Desarrollador de software y profesor de informática, experiencia en .NET, Angular, React y SQL Server." />
-  <meta property="og:title" content="Fabián Chinchilla Mayorga — CV" />
-  <meta property="og:description" content="Desarrollador de software y profesor de informática con experiencia en .NET, Angular, React y SQL Server." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0f172a" />
-  <style>
-    :root {
-      --bg: #0b1020; --panel: #0f172a; --text: #e5e7eb; --muted: #9ca3af; --accent: #22c55e; --chip: #111827; --link: #93c5fd; --border: #1f2937; --maxw: 980px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,"Noto Sans";background:linear-gradient(180deg,var(--bg) 0%,#0a0f1d 100%);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-    a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
-    .wrap{max-width:var(--maxw);margin:40px auto;padding:0 20px}
-    .card{background:rgba(15,23,42,.94);border:1px solid var(--border);border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
-    .header{display:grid;grid-template-columns:1fr;gap:12px;padding:28px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,rgba(34,197,94,.08) 0%,rgba(34,197,94,0) 100%);border-radius:16px 16px 0 0}
-    .name{font-size:clamp(26px,3.5vw,40px);font-weight:800;letter-spacing:.5px}
-    .subtitle{color:var(--muted);font-size:15px}
-    .contacts{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
-    .chip{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;background:var(--chip);border:1px solid var(--border);border-radius:999px;font-size:14px}
-    .grid{display:grid;grid-template-columns:1fr;gap:24px;padding:24px}
-    @media(min-width:900px){.grid{grid-template-columns:1fr 1fr}}
-    h2{font-size:18px;letter-spacing:.3px;margin:0 0 12px;text-transform:uppercase;color:#cbd5e1}
-    section{background:transparent;border:1px solid var(--border);border-radius:12px;padding:18px}
-    .lead{font-size:16px;color:#d1d5db;margin:0}
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .skills .tag{padding:6px 10px;background:#0b1326;border:1px solid var(--border);border-radius:8px;font-size:13px;color:#c7d2fe}
-    .item{margin-bottom:18px}.item:last-child{margin-bottom:0}
-    .role{font-weight:700}.org{color:#e2e8f0}.when{color:var(--muted);font-size:14px}
-    .bullets{margin:8px 0 0 18px;padding:0}.bullets li{margin:6px 0}
-    .edu-list,.lang-list,.cert-list{margin:0;padding-left:18px}
-    footer{text-align:center;color:var(--muted);font-size:13px;padding:0 24px 28px 24px}
-    @media print{body{background:#fff;color:#111}.card{box-shadow:none;border:none}a{color:#0366d6}.chip{border:1px solid #ddd;background:#fafafa}.skills .tag{border:1px solid #ddd;background:#fafafa;color:#222}section{border:1px solid #ddd}}
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fabián Chinchilla Mayorga — CV</title>
+    <meta name="description"
+        content="CV de Fabián Chinchilla Mayorga — Desarrollador de Software y Profesor de Informática en San José, Costa Rica.">
+    <meta name="theme-color" content="#0b0f14">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Fabián Chinchilla Mayorga — CV">
+    <meta property="og:description"
+        content="Desarrollador de Software y Profesor de Informática. San José, Costa Rica.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arg3ni5.github.io/">
+    <meta property="og:locale" content="es_CR">
+    <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
-  <main class="wrap">
-    <article class="card">
-      <header class="header" role="banner">
-        <div class="name">Fabián Chinchilla Mayorga</div>
-        <div class="subtitle">Desarrollador de Software • Profesor de Informática</div>
-        <div class="contacts" aria-label="Contacto">
-          <span class="chip">📞 <a href="tel:+50672087969">(506) 7208-7969</a></span>
-          <span class="chip">✉️ <a href="mailto:fb.argenis@gmail.com">fb.argenis@gmail.com</a></span>
-          <span class="chip">💼 <a href="https://www.linkedin.com/in/fabian-chinchilla/" target="_blank" rel="noopener">LinkedIn</a></span>
-          <span class="chip">🐙 <a href="https://github.com/arg3ni5" target="_blank" rel="noopener">@arg3ni5</a></span>
-        </div>
-      </header>
+    <a class="skip" href="#main">Saltar al contenido principal</a>
 
-      <div class="grid">
-        <!-- Columna izquierda -->
-        <div>
-          <section aria-labelledby="perfil">
-            <h2 id="perfil">Perfil profesional</h2>
-            <p class="lead">Desarrollador de software con sólida experiencia en análisis y desarrollo de aplicaciones web. Especializado en .NET, Angular y React. Habilidades pedagógicas desarrolladas mediante la enseñanza de programación y ofimática.</p>
-          </section>
 
-          <section aria-labelledby="skills">
-            <h2 id="skills">Habilidades técnicas</h2>
-            <div class="skills">
-              <span class="tag">Java (Hibernate/Spring)</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">Angular +8 / AngularJS</span>
-              <span class="tag">React</span>
-              <span class="tag">HTML5 / CSS (Bootstrap)</span>
-              <span class="tag">ASP.NET Core</span>
-              <span class="tag">SQL Server</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">MongoDB</span>
-              <span class="tag">Windows / Linux / macOS</span>
-            </div>
-          </section>
+    <main class="wrap">
+        <article class="card">
+            <header class="header" role="banner">
+                <h1 id="name" class="name">Fabián Chinchilla Mayorga</h1>
+                <p id="role" class="role">Desarrollador de Software y Profesor de Informática</p>
+                <p class="meta" aria-label="Ubicación">San José, Costa Rica</p>
 
-          <section aria-labelledby="educacion">
-            <h2 id="educacion">Educación</h2>
-            <ul class="edu-list">
-              <li><strong>Bachillerato en Informática Empresarial</strong> — Universidad de Costa Rica</li>
-              <li><strong>Bachillerato en Contaduría Pública</strong> — Universidad Metropolitana Castro Carazo</li>
-            </ul>
-          </section>
+                <div class="actions" role="group" aria-label="Acciones">
+                    <a class="btn" href="tel:+50672087969" aria-label="Llamar al teléfono +506 7208-7969">📞
+                        Teléfono</a>
+                    <a class="btn" href="mailto:fb.argenis@gmail.com"
+                        aria-label="Enviar correo a fb.argenis@gmail.com">✉️
+                        Correo</a>
+                    <a class="btn" href="https://www.linkedin.com/in/fabian-chinchilla/" target="_blank" rel="noopener"
+                        aria-label="Abrir LinkedIn de Fabián Chinchilla">in LinkedIn</a>
+                    <a class="btn" href="https://github.com/arg3ni5" target="_blank" rel="noopener"
+                        aria-label="Abrir GitHub de usuario arg3ni5">@arg3ni5</a>
+                    <button class="btn" type="button" onclick="window.print()"
+                        aria-label="Imprimir este CV o guardarlo como PDF">🖨️ Imprimir / PDF</button>
+                </div>
+            </header>
 
-          <section aria-labelledby="certs">
-            <h2 id="certs">Certificaciones</h2>
-            <ul class="cert-list">
-              <li>Scrum Fundamentals Certified</li>
-            </ul>
-          </section>
-        </div>
 
-        <!-- Columna derecha -->
-        <div>
-          <section aria-labelledby="exp">
-            <h2 id="exp">Experiencia</h2>
+            <div class="grid">
+                <!-- Columna izquierda -->
+                <article class="section" aria-labelledby="perfil">
+                    <h2 id="perfil">Perfil profesional</h2>
+                    <p id="perfil-texto" class="lead"></p>
 
-            <div class="item">
-              <div class="role">Frontend Developer – Full Stack Developer <span class="when">| Mar 2025 – Actualidad</span></div>
-              <div class="org">Euromobilia S.A. · Contacto: Davy Vargas — <a href="mailto:dvargas@euromobilia.com">dvargas@euromobilia.com</a> · 8310‑5816</div>
-              <ul class="bullets">
-                <li>Desarrollo de EuroSif para gestión de órdenes de producción e inventario.</li>
-                <li>Herramientas: Java, Hibernate, Spring Web, JavaScript, AngularJS/Angular, HTML5, CSS3, Ionic, .NET.</li>
-              </ul>
+                    <h2 id="habilidades" style="margin-top:18px">Habilidades técnicas</h2>
+                    <div id="skills" class="chips" role="list" aria-label="Habilidades técnicas"></div>
+                </article>
+
+                <!-- Columna derecha -->
+                <aside class="section" aria-labelledby="educacion">
+                    <h2 id="educacion">Educación</h2>
+                    <ul id="education" class="list" aria-label="Lista de educación"></ul>
+
+                    <h2 id="certificaciones" style="margin-top:18px">Certificaciones</h2>
+                    <ul id="certs" class="list" aria-label="Lista de certificaciones"></ul>
+
+                    <h2 id="idiomas" style="margin-top:18px">Idiomas</h2>
+                    <ul id="langs" class="list" aria-label="Lista de idiomas"></ul>
+
+                    <details class="json-viewer" id="json-view" aria-label="Ver datos en JSON">
+                        <summary>Ver JSON de este CV</summary>
+                        <pre id="json-out" aria-live="polite"></pre>
+                    </details>
+                </aside>
             </div>
 
-            <div class="item">
-              <div class="role">Instructor Cursos Virtuales de Programación <span class="when">| Sep 2024 – Actualidad</span></div>
-              <div class="org">Universidad Central</div>
-              <ul class="bullets">
-                <li>Cursos de Java y Visual Basic con ASP.NET; diseño de recursos didácticos.</li>
-              </ul>
-            </div>
+            <section class="section" aria-labelledby="experiencia" style="margin-top:var(--gap)">
+                <h2 id="experiencia">Experiencia</h2>
+                <div id="experience" class="exp" role="list"></div>
+            </section>
 
-            <div class="item">
-              <div class="role">Instructor Cursos Presenciales de Ofimática <span class="when">| Oct 2024 – Dic 2024</span></div>
-              <div class="org">Instituto DISCERE</div>
-              <ul class="bullets">
-                <li>Capacitación en herramientas de productividad y competencias digitales.</li>
-              </ul>
-            </div>
+            <footer role="contentinfo">
+                <p>© <span id="y">2025</span> Fabián Chinchilla Mayorga · San José, Costa Rica</p>
+                <p><a href="#">Descargar PDF</a> · <a href="mailto:fb.argenis@gmail.com">Contactar</a></p>
+            </footer>
+        </article>
 
-            <div class="item">
-              <div class="role">Analista de Software <span class="when">| Nov 2022 – Dic 2024</span></div>
-              <div class="org">GBSYS · Contacto: Katherine Ledezma — <a href="mailto:katherine.ledezma@gbsys.com">katherine.ledezma@gbsys.com</a> · 8864‑9451</div>
-              <ul class="bullets">
-                <li>Corrección de incidentes y mejoras en sistemas del Banco Popular.</li>
-                <li>Actualización de plataforma de bienes adjudicados. Stack: .NET, Ionic, Angular, HTML, CSS, SQL.</li>
-              </ul>
-            </div>
+        <!--
+    =============================================
+    SECCIÓN DE PROYECTOS (DESACTIVADA POR AHORA)
+    Para activarla, elimina este comentario.
+    =============================================
+    <section class="card section" aria-labelledby="proyectos" style="margin-top:var(--gap)">
+      <h2 id="proyectos">Proyectos</h2>
+      <ul class="list">
+        <li><strong>Nombre del proyecto</strong> — Breve descripción, tecnologías.</li>
+      </ul>
+    </section>
+    -->
 
-            <div class="item">
-              <div class="role">Analista de Software <span class="when">| Sep 2022 – Nov 2022</span></div>
-              <div class="org">Tecoop RL · Contacto: Helberth Román — <a href="mailto:helberth.roman@tecoop.cr">helberth.roman@tecoop.cr</a> · 7153‑4556</div>
-              <ul class="bullets">
-                <li>Actualización de Cartrack a última versión y nuevas funciones.</li>
-                <li>Stack: React, HTML, CSS, SQL Server.</li>
-              </ul>
-            </div>
 
-            <div class="item">
-              <div class="role">QA Analyst – Frontend Developer <span class="when">| Jul 2021 – Ago 2022</span></div>
-              <div class="org">CODISA · Contacto: Manuel León — <a href="mailto:mleon@codisa.com">mleon@codisa.com</a> · 8820‑8704</div>
-              <ul class="bullets">
-                <li>Plataforma de venta/alquiler de propiedades con integración bancaria.</li>
-                <li>Stack: Angular, Cypress, Node.js, MongoDB, HTML, CSS.</li>
-              </ul>
-            </div>
+    </main>
 
-            <div class="item">
-              <div class="role">Analista de Software <span class="when">| Ago 2020 – Jul 2021</span></div>
-              <div class="org">Tecoop RL · Contacto: Helberth Román — <a href="mailto:helberth.roman@tecoop.cr">helberth.roman@tecoop.cr</a> · 7153‑4556</div>
-              <ul class="bullets">
-                <li>Pruebas integrales y desarrollo de productos de software.</li>
-                <li>Stack: Java, Hibernate, Spring Web, JavaScript, Angular, HTML5, CSS3, Ionic, .NET.</li>
-              </ul>
-            </div>
 
-            <div class="item">
-              <div class="role">Frontend Developer – Full Stack Developer <span class="when">| Sep 2017 – Jul 2020</span></div>
-              <div class="org">Euromobilia S.A. · Contacto: Davy Vargas — <a href="mailto:dvargas@euromobilia.com">dvargas@euromobilia.com</a> · 8310‑5816</div>
-              <ul class="bullets">
-                <li>Desarrollo de EuroSif para producción e inventarios.</li>
-                <li>Stack: Java, Hibernate, Spring Web, JavaScript, AngularJS/Angular, HTML5, CSS3, Ionic, .NET.</li>
-              </ul>
-            </div>
-          </section>
+    <!-- Datos estructurados en JSON embebido -->
+    <script id="cv-data" type="application/json">
+  {
+    "basics": {
+      "name": "Fabián Chinchilla Mayorga",
+      "role": "Desarrollador de Software y Profesor de Informática",
+      "location": "San José, Costa Rica",
+      "email": "fb.argenis@gmail.com",
+      "phone": "+506 7208-7969",
+      "linkedin": "https://www.linkedin.com/in/fabian-chinchilla/",
+      "github": "https://github.com/arg3ni5"
+    },
+    "profile": "Desarrollador de software con experiencia en análisis, diseño e implementación de aplicaciones web y de escritorio. Enfocado en .NET, Java/JavaScript (React, Angular) y SQL. Complemento la práctica profesional con docencia en programación, comunicando conceptos técnicos con claridad y buenas prácticas.",
+    "skills": [".NET / ASP.NET","C# / VB.NET","Java / Spring","JavaScript / TypeScript","React","Angular","HTML5 / CSS","SQL Server / MySQL","MongoDB","Git","Docker"],
+    "education": [
+      {"title":"Bachillerato en Informática Empresarial","org":"Universidad de Costa Rica"},
+      {"title":"Bachillerato en Contaduría Pública","org":"Universidad Metropolitana Castro Carazo"}
+    ],
+    "certifications": ["Scrum Fundamentals Certified"],
+    "languages": [
+      {"name":"Español","level":"Nativo"},
+      {"name":"Inglés","level":"A2"}
+    ],
+    "experience": [
+      {
+        "title":"Frontend / Full Stack Developer — Euromobilia S.A.",
+        "period":"Marzo 2025 – Actualidad · San José, CR",
+        "bullets":[
+          "Desarrollo y mantenimiento de sistemas internos de producción e inventario (.NET, Java, Angular, SQL).",
+          "Colaboración con áreas de negocio para mejorar flujos y reportes."
+        ]
+      },
+      {
+        "title":"Instructor de Programación — Universidad Central",
+        "period":"Septiembre 2024 – Actualidad · Remoto/Presencial",
+        "bullets":[
+          "Impartición de cursos de Java y Visual Basic con ASP.NET.",
+          "Diseño de prácticas, rúbricas y material didáctico."
+        ]
+      },
+      {
+        "title":"Analista de Software — GBSYS",
+        "period":"Noviembre 2022 – Diciembre 2024 · San José, CR",
+        "bullets":[
+          "Corrección de incidentes y mejoras para aplicaciones del sector bancario (.NET, Angular, SQL).",
+          "Actualización de plataforma de venta de bienes adjudicados."
+        ]
+      },
+      {
+        "title":"Analista de Software — Tecoop RL",
+        "period":"Septiembre 2022 – Noviembre 2022 · San José, CR",
+        "bullets":[
+          "Actualización de sistema Cartrack e implementación de nuevas funcionalidades (React, SQL Server)."
+        ]
+      },
+      {
+        "title":"QA Analyst / Frontend Developer",
+        "period":"Julio 2021 – Agosto 2022 · San José, CR",
+        "bullets":[
+          "Desarrollo de plataforma de compra/venta y alquiler de propiedades con integración bancaria (Angular, Node.js, MongoDB).",
+          "Automatización de pruebas de interfaz con Cypress."
+        ]
+      },
+      {
+        "title":"Frontend / Full Stack Developer — Euromobilia S.A.",
+        "period":"Septiembre 2017 – Julio 2020 · San José, CR",
+        "bullets":[
+          "Desarrollo de sistema EuroSif para órdenes de producción e inventario (Java, Spring, AngularJS/Angular, .NET).",
+          "Mejoras de rendimiento y optimización de consultas."
+        ]
+      }
+    ]
+  }
+  </script>
 
-          <section aria-labelledby="idiomas">
-            <h2 id="idiomas">Idiomas</h2>
-            <ul class="lang-list">
-              <li>Español: Nativo</li>
-              <li>Inglés: A2</li>
-            </ul>
-          </section>
-        </div>
-      </div>
+    <script>
+        // Utilidades de acceso seguro
+        function $(sel, root = document) { return root.querySelector(sel); }
+        function el(tag, attrs = {}) { const n = document.createElement(tag); Object.assign(n, attrs); return n; }
 
-      <footer role="contentinfo">
-        <p>© <span id="y">2025</span> Fabián Chinchilla Mayorga · San José, Costa Rica</p>
-        <p><a href="#">Descargar PDF</a> · <a href="mailto:fb.argenis@gmail.com">Contactar</a></p>
-      </footer>
-    </article>
-  </main>
+        // Render dinámico desde JSON embebido
+        (function renderFromJSON() {
+            try {
+                const raw = document.getElementById('cv-data').textContent;
+                const data = JSON.parse(raw);
 
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+                // Perfil
+                const p = document.getElementById('perfil-texto');
+                if (p) p.textContent = data.profile || '';
+
+                // Skills
+                const skills = document.getElementById('skills');
+                if (Array.isArray(data.skills)) {
+                    data.skills.forEach(s => skills.appendChild(el('span', { className: 'chip', textContent: s })));
+                }
+
+                // Education
+                const edu = document.getElementById('education');
+                (data.education || []).forEach(e => {
+                    const li = el('li'); li.innerHTML = `<strong>${e.title}</strong> — ${e.org}`; edu.appendChild(li);
+                });
+
+                // Certs
+                const certs = document.getElementById('certs');
+                (data.certifications || []).forEach(c => { const li = el('li'); li.textContent = c; certs.appendChild(li); });
+
+                // Languages
+                const langs = document.getElementById('langs');
+                (data.languages || []).forEach(l => { const li = el('li'); li.textContent = `${l.name} — ${l.level}`; langs.appendChild(li); });
+
+                // Experience con separadores claros
+                const exp = document.getElementById('experience');
+                (data.experience || []).forEach((x, i) => {
+                    const item = el('article', { className: 'exp-item', role: 'listitem' });
+                    const h3 = el('h3', { className: 'exp-title' }); h3.textContent = x.title; item.appendChild(h3);
+                    const meta = el('p', { className: 'exp-meta' }); meta.textContent = x.period; item.appendChild(meta);
+                    const ul = el('ul', { className: 'exp-list' });
+                    (x.bullets || []).forEach(b => { const li = el('li'); li.textContent = b; ul.appendChild(li); });
+                    item.appendChild(ul);
+                    exp.appendChild(item);
+                    if (i < (data.experience.length - 1)) {
+                        const div = el('div', { className: 'exp-divider', role: 'separator', 'aria-hidden': 'true' });
+                        exp.appendChild(div);
+                    }
+                });
+
+                // Volcar JSON visible
+                const pretty = JSON.stringify(data, null, 2);
+                const out = document.getElementById('json-out'); if (out) out.textContent = pretty;
+
+            } catch (err) { console.error('Error al renderizar JSON del CV:', err); }
+        })();
+
+        // Año dinámico en footer
+        (function () {
+            var y = new Date().getFullYear();
+            var ely = document.getElementById('year');
+            if (ely) ely.textContent = y;
+        })();
+    </script>
 </body>
+
 </html>
