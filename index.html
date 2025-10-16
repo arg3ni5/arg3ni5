@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es-CR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fabián Chinchilla Mayorga — CV</title>
+  <meta name="description" content="CV de Fabián Chinchilla Mayorga — Desarrollador de Software y Profesor de Informática en San José, Costa Rica.">
+  <meta name="theme-color" content="#0b0f14">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fabián Chinchilla Mayorga — CV">
+  <meta property="og:description" content="Desarrollador de Software y Profesor de Informática. San José, Costa Rica.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arg3ni5.github.io/">
+  <meta property="og:locale" content="es_CR">
+  
+  <style>
+    :root{
+      --bg:#0b0f14;          /* page background */
+      --card:#111823;        /* card background */
+      --muted:#9aa4b2;       /* secondary text */
+      --text:#e8edf2;        /* primary text */
+      --accent:#7dd3fc;      /* light cyan */
+      --chip:#182233;        /* chip bg */
+      --chip-br:#2a3952;     /* chip border */
+      --focus:#22d3ee;       /* focus outline */
+      --link:#8bafff;        /* links */
+      --ok:#a7f3d0;          /* success tint */
+      --shadow: 0 10px 24px rgba(0,0,0,.35);
+      --radius:16px;
+      --radius-sm:12px;
+      --radius-xs:8px;
+      --gap:20px;
+      --gap-sm:12px;
+      --maxw:1024px;
+    }
+    html,body{height:100%}
+    body{
+      margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,sans-serif; 
+      background:var(--bg); color:var(--text);
+      -webkit-font-smoothing: antialiased; text-rendering:optimizeLegibility;
+    }
+    a{color:var(--link)}
+    a:focus,button:focus,[tabindex="0"]:focus{outline:3px solid var(--focus); outline-offset:3px; border-radius:8px}
+    .skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{position:fixed;left:16px;top:16px;width:auto;height:auto;padding:8px 12px;background:#fff;color:#111;border-radius:8px;z-index:9999}
+
+    header[role="banner"]{background: linear-gradient(180deg, #0b0f14 0%, #0d1420 100%);}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+
+    .card{background:var(--card);border:1px solid #1d2a3e;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .header-card{padding:28px}
+    .name{font-size:clamp(28px,4vw,40px);margin:0 0 6px 0;letter-spacing:.2px}
+    .role{margin:0;color:#c8d2df;font-weight:600}
+    .meta{margin-top:10px;color:var(--muted)}
+
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+    .chip{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;background:var(--chip);border:1px solid var(--chip-br);border-radius:999px;color:#dbe7ff;white-space:nowrap}
+    .chip .sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+    .grid{display:grid;grid-template-columns:1fr;gap:var(--gap)}
+    @media (min-width: 900px){ .grid{grid-template-columns: 1.2fr .8fr} }
+
+    .section{padding:24px}
+    .section h2{margin:0 0 10px;font-size:20px;letter-spacing:.3px}
+    .lead{color:#cfe2ff}
+    .list{margin:0;padding-left:18px}
+    .list li{margin:4px 0}
+
+    .exp{display:grid;gap:14px}
+    .exp-item{padding:18px;border:1px solid #1d2a3e;border-radius:var(--radius-sm);background:rgba(255,255,255,0.02)}
+    .exp-title{margin:0;font-weight:700}
+    .exp-meta{margin:2px 0 8px 0;color:var(--muted)}
+    .exp-list{margin:0;padding-left:18px}
+
+    footer{margin:24px 0 48px}
+    .footer-card{padding:18px;text-align:center;color:var(--muted)}
+
+    /* Print-friendly */
+    @media print{
+      :root{--bg:#ffffff;--card:#ffffff;--text:#111;--muted:#333;--link:#111}
+      body{background:#fff;color:#111}
+      .card{box-shadow:none;border:1px solid #ccc}
+      .chips .chip{border-color:#bbb;background:#f5f5f5;color:#111}
+      a{text-decoration:underline}
+      .container{padding:0}
+      header[role="banner"], .footer-card{background:#fff}
+      .grid{grid-template-columns:1fr!important}
+      .no-print{display:none!important}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido principal</a>
+  <header role="banner">
+    <div class="container card header-card" aria-labelledby="name role">
+      <h1 id="name" class="name">Fabián Chinchilla Mayorga</h1>
+      <p id="role" class="role">Desarrollador de Software y Profesor de Informática</p>
+      <p class="meta" aria-label="Ubicación">San José, Costa Rica</p>
+      <nav class="chips" aria-label="Contacto">
+        <a class="chip" href="tel:+50672087969" rel="nofollow" aria-label="Llamar al teléfono +506 7208-7969">📞 <span class="sr-only">Teléfono:</span> +506 7208-7969</a>
+        <a class="chip" href="mailto:fb.argenis@gmail.com" aria-label="Enviar correo a fb.argenis@gmail.com">✉️ <span class="sr-only">Correo:</span> fb.argenis@gmail.com</a>
+        <a class="chip" href="https://www.linkedin.com/in/fabian-chinchilla/" target="_blank" rel="noopener" aria-label="Abrir LinkedIn de Fabián Chinchilla">in LinkedIn</a>
+        <a class="chip" href="https://github.com/arg3ni5" target="_blank" rel="noopener" aria-label="Abrir GitHub de usuario arg3ni5">@arg3ni5</a>
+        <a class="chip" href="CV.pdf" download aria-label="Descargar versión PDF del CV">⬇️ Descargar PDF</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <div class="grid">
+      <!-- Columna izquierda -->
+      <article class="card section" aria-labelledby="perfil">
+        <h2 id="perfil">Perfil profesional</h2>
+        <p class="lead">Desarrollador de software con experiencia en análisis, diseño e implementación de aplicaciones web y de escritorio. Enfocado en .NET, Java/JavaScript (React, Angular) y SQL. Complemento la práctica profesional con docencia en programación, comunicando conceptos técnicos con claridad y buenas prácticas.</p>
+
+        <h2 id="habilidades" style="margin-top:18px">Habilidades técnicas</h2>
+        <div class="chips" role="list" aria-label="Habilidades técnicas">
+          <span class="chip" role="listitem">.NET / ASP.NET</span>
+          <span class="chip" role="listitem">C# / VB.NET</span>
+          <span class="chip" role="listitem">Java / Spring</span>
+          <span class="chip" role="listitem">JavaScript / TypeScript</span>
+          <span class="chip" role="listitem">React</span>
+          <span class="chip" role="listitem">Angular</span>
+          <span class="chip" role="listitem">HTML5 / CSS</span>
+          <span class="chip" role="listitem">SQL Server / MySQL</span>
+          <span class="chip" role="listitem">MongoDB</span>
+          <span class="chip" role="listitem">Git</span>
+          <span class="chip" role="listitem">Docker</span>
+        </div>
+      </article>
+
+      <!-- Columna derecha -->
+      <aside class="card section" aria-labelledby="educacion">
+        <h2 id="educacion">Educación</h2>
+        <ul class="list" aria-label="Lista de educación">
+          <li><strong>Bachillerato en Informática Empresarial</strong> — Universidad de Costa Rica</li>
+          <li><strong>Bachillerato en Contaduría Pública</strong> — Universidad Metropolitana Castro Carazo</li>
+        </ul>
+
+        <h2 id="certificaciones" style="margin-top:18px">Certificaciones</h2>
+        <ul class="list" aria-label="Lista de certificaciones">
+          <li>Scrum Fundamentals Certified</li>
+        </ul>
+
+        <h2 id="idiomas" style="margin-top:18px">Idiomas</h2>
+        <ul class="list" aria-label="Lista de idiomas">
+          <li>Español — Nativo</li>
+          <li>Inglés — A2</li>
+        </ul>
+      </aside>
+    </div>
+
+    <section class="card section" aria-labelledby="experiencia" style="margin-top:var(--gap)">
+      <h2 id="experiencia">Experiencia</h2>
+      <div class="exp" role="list">
+        <article class="exp-item" role="listitem" aria-labelledby="exp6t">
+          <h3 id="exp6t" class="exp-title">Frontend / Full Stack Developer — Euromobilia S.A.</h3>
+          <p class="exp-meta">Marzo 2025 – Actualidad · San José, CR</p>
+          <ul class="exp-list">
+            <li>Desarrollo y mantenimiento de sistemas internos de producción e inventario (.NET, Java, Angular, SQL).</li>
+            <li>Colaboración con áreas de negocio para mejorar flujos y reportes.</li>
+          </ul>
+        </article>
+
+        <article class="exp-item" role="listitem" aria-labelledby="exp5t">
+          <h3 id="exp5t" class="exp-title">Instructor de Programación — Universidad Central</h3>
+          <p class="exp-meta">Septiembre 2024 – Actualidad · Remoto/Presencial</p>
+          <ul class="exp-list">
+            <li>Impartición de cursos de Java y Visual Basic con ASP.NET.</li>
+            <li>Diseño de prácticas, rúbricas y material didáctico.</li>
+          </ul>
+        </article>
+
+        <article class="exp-item" role="listitem" aria-labelledby="exp4t">
+          <h3 id="exp4t" class="exp-title">Analista de Software — GBSYS</h3>
+          <p class="exp-meta">Noviembre 2022 – Diciembre 2024 · San José, CR</p>
+          <ul class="exp-list">
+            <li>Corrección de incidentes y mejoras para aplicaciones del sector bancario (.NET, Angular, SQL).</li>
+            <li>Actualización de plataforma de venta de bienes adjudicados.</li>
+          </ul>
+        </article>
+
+        <article class="exp-item" role="listitem" aria-labelledby="exp3t">
+          <h3 id="exp3t" class="exp-title">Analista de Software — Tecoop RL</h3>
+          <p class="exp-meta">Septiembre 2022 – Noviembre 2022 · San José, CR</p>
+          <ul class="exp-list">
+            <li>Actualización de sistema Cartrack e implementación de nuevas funcionalidades (React, SQL Server).</li>
+          </ul>
+        </article>
+
+        <article class="exp-item" role="listitem" aria-labelledby="exp2t">
+          <h3 id="exp2t" class="exp-title">QA Analyst / Frontend Developer</h3>
+          <p class="exp-meta">Julio 2021 – Agosto 2022 · San José, CR</p>
+          <ul class="exp-list">
+            <li>Desarrollo de plataforma de compra/venta y alquiler de propiedades con integración bancaria (Angular, Node.js, MongoDB).</li>
+            <li>Automatización de pruebas de interfaz con Cypress.</li>
+          </ul>
+        </article>
+
+        <article class="exp-item" role="listitem" aria-labelledby="exp1t">
+          <h3 id="exp1t" class="exp-title">Frontend / Full Stack Developer — Euromobilia S.A.</h3>
+          <p class="exp-meta">Septiembre 2017 – Julio 2020 · San José, CR</p>
+          <ul class="exp-list">
+            <li>Desarrollo de sistema EuroSif para órdenes de producción e inventario (Java, Spring, AngularJS/Angular, .NET).</li>
+            <li>Mejoras de rendimiento y optimización de consultas.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!--
+    =============================================
+    SECCIÓN DE PROYECTOS (DESACTIVADA POR AHORA)
+    Para activarla, elimina este comentario.
+    =============================================
+    <section class="card section" aria-labelledby="proyectos" style="margin-top:var(--gap)">
+      <h2 id="proyectos">Proyectos</h2>
+      <ul class="list">
+        <li><strong>Nombre del proyecto</strong> — Breve descripción, tecnologías.</li>
+      </ul>
+    </section>
+    -->
+  </main>
+
+  <footer class="container">
+    <div class="card footer-card" role="contentinfo">
+      <p>
+        © <span id="year"></span> · Fabián Chinchilla Mayorga · 
+        <a href="mailto:fb.argenis@gmail.com">fb.argenis@gmail.com</a> · 
+        <a href="tel:+50672087969">+506 7208-7969</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Update current year in footer
+    (function(){
+      var y = new Date().getFullYear();
+      var el = document.getElementById('year');
+      if(el) el.textContent = y;
+    })();
+  </script>
+</body>
+</html>

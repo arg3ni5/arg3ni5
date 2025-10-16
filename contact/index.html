@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fabián Chinchilla Mayorga — CV</title>
+  <meta name="description" content="CV de Fabián Chinchilla Mayorga: Desarrollador de software y profesor de informática, experiencia en .NET, Angular, React y SQL Server." />
+  <meta property="og:title" content="Fabián Chinchilla Mayorga — CV" />
+  <meta property="og:description" content="Desarrollador de software y profesor de informática con experiencia en .NET, Angular, React y SQL Server." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #0f172a;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #22c55e;
+      --chip: #111827;
+      --link: #93c5fd;
+      --border: #1f2937;
+      --maxw: 980px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Helvetica Neue, Arial, Noto Sans, Apple Color Emoji, Segoe UI Emoji;
+      background: linear-gradient(180deg, var(--bg) 0%, #0a0f1d 100%);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: var(--maxw); margin: 40px auto; padding: 0 20px; }
+    .card { background: rgba(15, 23, 42, 0.9); border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+    .header {
+      display: grid; grid-template-columns: 1fr; gap: 12px; padding: 28px; border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(34,197,94,0.08) 0%, rgba(34,197,94,0) 100%);
+      border-radius: 16px 16px 0 0;
+    }
+    .name { font-size: clamp(26px, 3.5vw, 40px); font-weight: 800; letter-spacing: .5px; }
+    .subtitle { color: var(--muted); font-size: 15px; }
+    .contacts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+    .chip { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; background: var(--chip); border: 1px solid var(--border); border-radius: 999px; font-size: 14px; }
+
+    .grid { display: grid; grid-template-columns: 1fr; gap: 24px; padding: 24px; }
+    @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+
+    h2 { font-size: 18px; letter-spacing: .3px; margin: 0 0 12px; text-transform: uppercase; color: #cbd5e1; }
+    section { background: transparent; border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+
+    .lead { font-size: 16px; color: #d1d5db; margin: 0; }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skills .tag { padding: 6px 10px; background: #0b1326; border: 1px solid var(--border); border-radius: 8px; font-size: 13px; color: #c7d2fe; }
+
+    .item { margin-bottom: 18px; }
+    .item:last-child { margin-bottom: 0; }
+    .role { font-weight: 700; }
+    .org { color: #e2e8f0; }
+    .when { color: var(--muted); font-size: 14px; }
+    .bullets { margin: 8px 0 0 18px; padding: 0; }
+    .bullets li { margin: 6px 0; }
+
+    .edu-list, .lang-list, .cert-list { margin: 0; padding-left: 18px; }
+
+    footer { text-align: center; color: var(--muted); font-size: 13px; padding: 18px 0 28px; }
+
+    @media print {
+      body { background: #fff; color: #111; }
+      .card { box-shadow: none; border: none; }
+      a { color: #0366d6; }
+      .chip { border: 1px solid #ddd; background: #fafafa; }
+      .skills .tag { border: 1px solid #ddd; background: #fafafa; color: #222; }
+      section { border: 1px solid #ddd; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="card">
+      <header class="header">
+        <div class="name">Fabián Chinchilla Mayorga</div>
+        <div class="subtitle">Desarrollador de Software • Profesor de Informática</div>
+        <div class="contacts">
+          <span class="chip">📞 <a href="tel:+50672087969">(506) 7208‑7969</a></span>
+          <span class="chip">✉️ <a href="mailto:fb.argenis@gmail.com">fb.argenis@gmail.com</a></span>
+          <span class="chip">💼 <a href="https://www.linkedin.com/in/fabian-chinchilla/" target="_blank" rel="noopener">LinkedIn</a></span>
+          <span class="chip">🐙 <a href="https://github.com/arg3ni5" target="_blank" rel="noopener">@arg3ni5</a></span>
+        </div>
+      </header>
+
+      <!-- Resto del contenido igual que antes -->
+      <footer>
+        <p>© <span id="y">2025</span> Fabián Chinchilla Mayorga · San José, Costa Rica</p>
+        <p><a href="#">Descargar PDF</a> · <a href="mailto:fb.argenis@gmail.com">Contactar</a></p>
+      </footer>
+    </article>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
