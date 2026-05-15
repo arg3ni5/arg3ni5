@@ -340,9 +340,81 @@ button:focus,
     background: rgba(17, 24, 39, .45)
 }
 
+.featured-projects-section {
+    border-color: rgba(34, 197, 94, .35);
+    background: linear-gradient(180deg, rgba(34, 197, 94, .08), rgba(17, 24, 39, .12))
+}
+
+.personal-projects {
+    gap: 16px
+}
+
+.personal-project-item {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%
+}
+
+.personal-project-item.is-featured {
+    border-color: rgba(125, 211, 252, .45);
+    background: rgba(15, 26, 41, .72)
+}
+
+.project-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px
+}
+
 .project-title {
     margin: 0;
     font-size: 18px
+}
+
+.project-status {
+    flex: 0 0 auto;
+    border: 1px solid var(--chip-br);
+    border-radius: 999px;
+    padding: 4px 8px;
+    color: var(--ok);
+    background: rgba(34, 197, 94, .08);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center
+}
+
+.project-summary {
+    margin: 12px 0 0
+}
+
+.project-note {
+    margin: 10px 0 0;
+    color: #cfe2ff;
+    font-size: 14px
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 16px
+}
+
+.project-link {
+    justify-content: center
+}
+
+@media(max-width:520px) {
+    .project-card-header {
+        display: grid
+    }
+
+    .project-status {
+        justify-self: start
+    }
 }
 
 .kbd {
