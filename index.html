@@ -22,25 +22,24 @@
     <a class="skip" href="#main">Saltar al contenido principal</a>
 
 
-    <main class="wrap">
+    <main id="main" class="wrap">
         <article class="card">
             <header class="header" role="banner">
                 <h1 id="name" class="name">Fabián Chinchilla Mayorga</h1>
                 <p id="role" class="role">Desarrollador de Software y Profesor de Informática</p>
-                <p class="meta" aria-label="Ubicación">San José, Costa Rica</p>
+                <p id="location" class="meta" aria-label="Ubicación">San José, Costa Rica</p>
 
                 <div class="actions" role="group" aria-label="Acciones">
-                    <a class="btn" href="tel:+50672087969" aria-label="Llamar al teléfono +506 7208-7969">📞
-                        Teléfono</a>
-                    <a class="btn" href="mailto:fb.argenis@gmail.com"
-                        aria-label="Enviar correo a fb.argenis@gmail.com">✉️
-                        Correo</a>
-                    <a class="btn" href="https://www.linkedin.com/in/fabian-chinchilla/" target="_blank" rel="noopener"
-                        aria-label="Abrir LinkedIn de Fabián Chinchilla">in LinkedIn</a>
-                    <a class="btn" href="https://github.com/arg3ni5" target="_blank" rel="noopener"
-                        aria-label="Abrir GitHub de usuario arg3ni5">@arg3ni5</a>
-                    <button class="btn" type="button" onclick="window.print()"
-                        aria-label="Imprimir este CV o guardarlo como PDF">🖨️ Imprimir / PDF</button>
+                    <a id="phone-link" class="btn" href="tel:+50672087969"
+                        aria-label="Llamar al teléfono +506 7208-7969">Teléfono</a>
+                    <a id="email-link" class="btn" href="mailto:fb.argenis@gmail.com"
+                        aria-label="Enviar correo a fb.argenis@gmail.com">Correo</a>
+                    <a id="linkedin-link" class="btn" href="https://www.linkedin.com/in/fabian-chinchilla/"
+                        target="_blank" rel="noopener" aria-label="Abrir LinkedIn de Fabián Chinchilla">LinkedIn</a>
+                    <a id="github-link" class="btn" href="https://github.com/arg3ni5" target="_blank" rel="noopener"
+                        aria-label="Abrir GitHub de usuario arg3ni5">GitHub</a>
+                    <button id="print-button" class="btn" type="button"
+                        aria-label="Imprimir este CV o guardarlo como PDF">Imprimir / PDF</button>
                 </div>
             </header>
 
@@ -52,7 +51,7 @@
                     <p id="perfil-texto" class="lead"></p>
 
                     <h2 id="habilidades" style="margin-top:18px">Habilidades técnicas</h2>
-                    <div id="skills" class="chips" role="list" aria-label="Habilidades técnicas"></div>
+                    <div id="skills" class="skill-groups" aria-label="Habilidades técnicas"></div>
                 </article>
 
                 <!-- Columna derecha -->
@@ -78,169 +77,24 @@
                 <div id="experience" class="exp" role="list"></div>
             </section>
 
+            <section class="section" aria-labelledby="proyectos" style="margin-top:var(--gap)">
+                <h2 id="proyectos">Proyectos destacados</h2>
+                <div id="projects" class="projects" role="list"></div>
+            </section>
+
+            <section class="section" aria-labelledby="experiencia-adicional" style="margin-top:var(--gap)">
+                <h2 id="experiencia-adicional">Experiencia adicional y docencia</h2>
+                <ul id="additional-experience" class="list" aria-label="Lista de experiencia adicional y docencia"></ul>
+            </section>
+
             <footer role="contentinfo">
                 <p>© <span id="y">2025</span> Fabián Chinchilla Mayorga · San José, Costa Rica</p>
-                <p><a href="#">Descargar PDF</a> · <a href="mailto:fb.argenis@gmail.com">Contactar</a></p>
+                <p><a href="#">Descargar PDF</a> · <a id="footer-email-link" href="mailto:fb.argenis@gmail.com">Contactar</a></p>
             </footer>
         </article>
-
-        <!--
-    =============================================
-    SECCIÓN DE PROYECTOS (DESACTIVADA POR AHORA)
-    Para activarla, elimina este comentario.
-    =============================================
-    <section class="card section" aria-labelledby="proyectos" style="margin-top:var(--gap)">
-      <h2 id="proyectos">Proyectos</h2>
-      <ul class="list">
-        <li><strong>Nombre del proyecto</strong> — Breve descripción, tecnologías.</li>
-      </ul>
-    </section>
-    -->
-
-
     </main>
 
-
-    <!-- Datos estructurados en JSON embebido -->
-    <script id="cv-data" type="application/json">
-  {
-    "basics": {
-      "name": "Fabián Chinchilla Mayorga",
-      "role": "Desarrollador de Software y Profesor de Informática",
-      "location": "San José, Costa Rica",
-      "email": "fb.argenis@gmail.com",
-      "phone": "+506 7208-7969",
-      "linkedin": "https://www.linkedin.com/in/fabian-chinchilla/",
-      "github": "https://github.com/arg3ni5"
-    },
-    "profile": "Desarrollador de software con experiencia en análisis, diseño e implementación de aplicaciones web y de escritorio. Enfocado en .NET, Java/JavaScript (React, Angular) y SQL. Complemento la práctica profesional con docencia en programación, comunicando conceptos técnicos con claridad y buenas prácticas.",
-    "skills": [".NET / ASP.NET","C# / VB.NET","Java / Spring","JavaScript / TypeScript","React","Angular","HTML5 / CSS","SQL Server / MySQL","MongoDB","Git","Docker"],
-    "education": [
-      {"title":"Bachillerato en Informática Empresarial","org":"Universidad de Costa Rica"},
-      {"title":"Bachillerato en Contaduría Pública","org":"Universidad Metropolitana Castro Carazo"}
-    ],
-    "certifications": ["Scrum Fundamentals Certified"],
-    "languages": [
-      {"name":"Español","level":"Nativo"},
-      {"name":"Inglés","level":"A2"}
-    ],
-    "experience": [
-      {
-        "title":"Frontend / Full Stack Developer — Euromobilia S.A.",
-        "period":"Marzo 2025 – Actualidad · San José, CR",
-        "bullets":[
-          "Desarrollo y mantenimiento de sistemas internos de producción e inventario (.NET, Java, Angular, SQL).",
-          "Colaboración con áreas de negocio para mejorar flujos y reportes."
-        ]
-      },
-      {
-        "title":"Instructor de Programación — Universidad Central",
-        "period":"Septiembre 2024 – Actualidad · Remoto/Presencial",
-        "bullets":[
-          "Impartición de cursos de Java y Visual Basic con ASP.NET.",
-          "Diseño de prácticas, rúbricas y material didáctico."
-        ]
-      },
-      {
-        "title":"Analista de Software — GBSYS",
-        "period":"Noviembre 2022 – Diciembre 2024 · San José, CR",
-        "bullets":[
-          "Corrección de incidentes y mejoras para aplicaciones del sector bancario (.NET, Angular, SQL).",
-          "Actualización de plataforma de venta de bienes adjudicados."
-        ]
-      },
-      {
-        "title":"Analista de Software — Tecoop RL",
-        "period":"Septiembre 2022 – Noviembre 2022 · San José, CR",
-        "bullets":[
-          "Actualización de sistema Cartrack e implementación de nuevas funcionalidades (React, SQL Server)."
-        ]
-      },
-      {
-        "title":"QA Analyst / Frontend Developer",
-        "period":"Julio 2021 – Agosto 2022 · San José, CR",
-        "bullets":[
-          "Desarrollo de plataforma de compra/venta y alquiler de propiedades con integración bancaria (Angular, Node.js, MongoDB).",
-          "Automatización de pruebas de interfaz con Cypress."
-        ]
-      },
-      {
-        "title":"Frontend / Full Stack Developer — Euromobilia S.A.",
-        "period":"Septiembre 2017 – Julio 2020 · San José, CR",
-        "bullets":[
-          "Desarrollo de sistema EuroSif para órdenes de producción e inventario (Java, Spring, AngularJS/Angular, .NET).",
-          "Mejoras de rendimiento y optimización de consultas."
-        ]
-      }
-    ]
-  }
-  </script>
-
-    <script>
-        // Utilidades de acceso seguro
-        function $(sel, root = document) { return root.querySelector(sel); }
-        function el(tag, attrs = {}) { const n = document.createElement(tag); Object.assign(n, attrs); return n; }
-
-        // Render dinámico desde JSON embebido
-        (function renderFromJSON() {
-            try {
-                const raw = document.getElementById('cv-data').textContent;
-                const data = JSON.parse(raw);
-
-                // Perfil
-                const p = document.getElementById('perfil-texto');
-                if (p) p.textContent = data.profile || '';
-
-                // Skills
-                const skills = document.getElementById('skills');
-                if (Array.isArray(data.skills)) {
-                    data.skills.forEach(s => skills.appendChild(el('span', { className: 'chip', textContent: s })));
-                }
-
-                // Education
-                const edu = document.getElementById('education');
-                (data.education || []).forEach(e => {
-                    const li = el('li'); li.innerHTML = `<strong>${e.title}</strong> — ${e.org}`; edu.appendChild(li);
-                });
-
-                // Certs
-                const certs = document.getElementById('certs');
-                (data.certifications || []).forEach(c => { const li = el('li'); li.textContent = c; certs.appendChild(li); });
-
-                // Languages
-                const langs = document.getElementById('langs');
-                (data.languages || []).forEach(l => { const li = el('li'); li.textContent = `${l.name} — ${l.level}`; langs.appendChild(li); });
-
-                // Experience con separadores claros
-                const exp = document.getElementById('experience');
-                (data.experience || []).forEach((x, i) => {
-                    const item = el('article', { className: 'exp-item', role: 'listitem' });
-                    const h3 = el('h3', { className: 'exp-title' }); h3.textContent = x.title; item.appendChild(h3);
-                    const meta = el('p', { className: 'exp-meta' }); meta.textContent = x.period; item.appendChild(meta);
-                    const ul = el('ul', { className: 'exp-list' });
-                    (x.bullets || []).forEach(b => { const li = el('li'); li.textContent = b; ul.appendChild(li); });
-                    item.appendChild(ul);
-                    exp.appendChild(item);
-                    if (i < (data.experience.length - 1)) {
-                        const div = el('div', { className: 'exp-divider', role: 'separator', 'aria-hidden': 'true' });
-                        exp.appendChild(div);
-                    }
-                });
-
-                // Volcar JSON visible
-                const pretty = JSON.stringify(data, null, 2);
-                const out = document.getElementById('json-out'); if (out) out.textContent = pretty;
-
-            } catch (err) { console.error('Error al renderizar JSON del CV:', err); }
-        })();
-
-        // Año dinámico en footer
-        (function () {
-            var y = new Date().getFullYear();
-            var ely = document.getElementById('year');
-            if (ely) ely.textContent = y;
-        })();
-    </script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

@@ -200,6 +200,23 @@ button:focus,
     margin-top: 16px
 }
 
+.skill-groups {
+    display: grid;
+    gap: 16px;
+    margin-top: 16px
+}
+
+.skill-group .chips {
+    margin-top: 8px
+}
+
+.skill-title {
+    margin: 0;
+    color: #c8d2df;
+    font-size: 15px;
+    font-weight: 700
+}
+
 .chip {
     display: inline-flex;
     align-items: center;
@@ -285,9 +302,47 @@ button:focus,
     color: var(--muted)
 }
 
+.exp-description,
+.exp-tech,
+.project-meta,
+.project-tech {
+    margin: 8px 0;
+    color: var(--muted)
+}
+
+.exp-tech,
+.project-tech {
+    color: #c8d2df;
+    font-size: 14px
+}
+
 .exp-list {
     margin: 0;
     padding-left: 18px
+}
+
+.projects {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: 1fr
+}
+
+@media(min-width:760px) {
+    .projects {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+}
+
+.project-item {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xs);
+    padding: 16px;
+    background: rgba(17, 24, 39, .45)
+}
+
+.project-title {
+    margin: 0;
+    font-size: 18px
 }
 
 .kbd {
