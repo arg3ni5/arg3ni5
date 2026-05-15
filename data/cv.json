@@ -1,0 +1,314 @@
+{
+  "basics": {
+    "name": "Fabián Chinchilla Mayorga",
+    "headline": "Software Developer | .NET | SQL Server | React | Enterprise Systems",
+    "role": "Desarrollador de Software",
+    "location": "San José, Costa Rica",
+    "email": "fb.argenis@gmail.com",
+    "phone": "+506 7208 7969",
+    "linkedin": "https://www.linkedin.com/in/fabian-chinchilla/",
+    "github": "https://github.com/arg3ni5",
+    "summary": "Desarrollador de software con más de 6 años de experiencia en sistemas empresariales, aplicaciones web y soluciones full-stack. Especializado en .NET, SQL Server, React, Angular, JavaScript y APIs REST, con experiencia en mantenimiento evolutivo, corrección de incidentes, optimización de reportes e integración de sistemas. Ha participado en proyectos financieros, logísticos y comerciales, combinando desarrollo técnico con análisis funcional y documentación de soluciones."
+  },
+  "profile": {
+    "title": "Perfil profesional",
+    "description": "Desarrollador de software con experiencia en análisis, diseño, mantenimiento e implementación de aplicaciones empresariales. Ha trabajado en sectores como banca, logística, comercio y soluciones corporativas, participando en sistemas internos, plataformas web, optimización de reportes, integración de servicios y soporte evolutivo de aplicaciones. Complementa su perfil técnico con experiencia como docente universitario y tutor de trabajos finales de graduación en informática."
+  },
+  "skills": {
+    "backend": [
+      ".NET",
+      "C#",
+      "VB.NET",
+      "ASP.NET",
+      "APIs REST",
+      "Node.js",
+      "Java",
+      "Spring Web",
+      "Hibernate"
+    ],
+    "frontend": [
+      "React",
+      "Angular",
+      "AngularJS",
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "Ionic Framework"
+    ],
+    "database": [
+      "SQL Server",
+      "MongoDB",
+      "Firebase",
+      "Supabase"
+    ],
+    "qaAndTools": [
+      "Cypress",
+      "JMeter",
+      "Git",
+      "Visual Studio",
+      "SQL Server Management Studio"
+    ],
+    "professional": [
+      "Análisis funcional",
+      "Mantenimiento evolutivo",
+      "Corrección de incidentes",
+      "Optimización de consultas y reportes",
+      "Documentación técnica",
+      "Docencia universitaria",
+      "Tutoría de trabajos finales de graduación"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Ara Group",
+      "companyDescription": "Grupo corporativo con empresas como Euromobilia, Altea, Vértice y Paneltech.",
+      "position": "Analista de Sistemas",
+      "location": "San José, Costa Rica",
+      "startDate": "2025-03",
+      "endDate": null,
+      "period": "Marzo 2025 – Actualidad",
+      "current": true,
+      "technologies": [
+        ".NET",
+        "SQL Server",
+        "JavaScript",
+        "React",
+        "Angular",
+        "APIs REST"
+      ],
+      "highlights": [
+        "Desarrollé y mantuve soluciones empresariales internas para distintas empresas del grupo corporativo, apoyando procesos operativos, comerciales, logísticos y administrativos.",
+        "Participé en proyectos como CRM de Vértice, CEDI WEB, WMS y optimización de reportes, contribuyendo a mejorar la consulta, control y trazabilidad de información empresarial.",
+        "Diseñé y desarrollé componentes Front-End y Back-End para integrar procesos internos mediante aplicaciones web y servicios conectados a bases de datos.",
+        "Optimicé consultas y reportes empresariales, mejorando la disponibilidad y análisis de información para la toma de decisiones.",
+        "Diseñé una propuesta avanzada de arquitectura denominada AraNexus, orientada a centralizar consultas de distintos sistemas mediante una API dinámica y un frontend configurable basado en metadatos.",
+        "Trabajé con tecnologías como .NET, SQL Server, JavaScript, React, Angular, APIs REST y herramientas de desarrollo empresarial."
+      ]
+    },
+    {
+      "company": "GBSYS",
+      "position": "Analista de Software",
+      "location": "San José, Costa Rica",
+      "startDate": "2022-11",
+      "endDate": "2024-12",
+      "period": "Noviembre 2022 – Diciembre 2024",
+      "current": false,
+      "technologies": [
+        ".NET",
+        "SQL Server",
+        "Angular",
+        "Ionic",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "highlights": [
+        "Analicé, corregí y mantuve sistemas y aplicaciones del Banco Popular, principalmente en el área de canales electrónicos y aplicaciones empresariales.",
+        "Resolví incidentes funcionales y técnicos, contribuyendo a la continuidad operativa de plataformas utilizadas en el sector financiero.",
+        "Implementé mejoras evolutivas en sistemas existentes, aplicando buenas prácticas de desarrollo, análisis de requerimientos y control de cambios.",
+        "Participé en la actualización y mantenimiento de una plataforma para la venta de bienes adjudicados.",
+        "Trabajé con tecnologías como .NET, SQL Server, Angular, Ionic, HTML, CSS y JavaScript."
+      ]
+    },
+    {
+      "company": "Tecoop R.L.",
+      "position": "Analista de Software · QA Analyst · Frontend Developer",
+      "location": "Costa Rica",
+      "startDate": "2020-08",
+      "endDate": "2022-11",
+      "period": "Agosto 2020 – Noviembre 2022",
+      "current": false,
+      "technologies": [
+        "React",
+        "Angular",
+        "Node.js",
+        "MongoDB",
+        "SQL Server",
+        "Cypress",
+        "JMeter",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        ".NET"
+      ],
+      "highlights": [
+        "Desarrollé y mantuve aplicaciones web orientadas a clientes, integrando funcionalidades Front-End, Back-End y bases de datos.",
+        "Implementé mejoras en sistemas existentes, incluyendo actualización de plataformas y nuevas funcionalidades solicitadas por clientes.",
+        "Ejecuté pruebas funcionales, integrales y automatizadas para validar la calidad del software antes de su entrega.",
+        "Participé en el desarrollo de una plataforma para venta y alquiler de propiedades con integración bancaria.",
+        "Trabajé con tecnologías como React, Angular, Node.js, MongoDB, SQL Server, Cypress, JMeter, JavaScript, HTML, CSS y .NET."
+      ]
+    },
+    {
+      "company": "Euromobilia S.A.",
+      "position": "Desarrollador Full Stack · Frontend Developer",
+      "location": "San José, Costa Rica",
+      "startDate": "2017-09",
+      "endDate": "2020-07",
+      "period": "Septiembre 2017 – Julio 2020",
+      "current": false,
+      "technologies": [
+        "Java",
+        "Hibernate",
+        "Spring Web",
+        "AngularJS",
+        "Angular",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Ionic Framework",
+        ".NET"
+      ],
+      "highlights": [
+        "Desarrollé módulos del sistema EuroSif para la gestión de órdenes de producción y control de inventario.",
+        "Implementé funcionalidades web para mejorar procesos internos relacionados con producción, inventario y operación empresarial.",
+        "Diseñé y mantuve componentes Front-End conectados con servicios y bases de datos empresariales.",
+        "Colaboré en el mantenimiento de sistemas internos, corrección de errores y mejora de funcionalidades existentes.",
+        "Trabajé con tecnologías como Java, Hibernate, Spring Web, AngularJS, Angular, JavaScript, HTML, CSS, Ionic Framework y .NET."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "AraNexus",
+      "type": "Arquitectura empresarial",
+      "summary": "Propuesta avanzada de arquitectura orientada a centralizar consultas de distintos sistemas mediante una API dinámica y un frontend configurable basado en metadatos.",
+      "technologies": [
+        ".NET",
+        "SQL Server",
+        "React",
+        "APIs REST",
+        "Metadatos"
+      ],
+      "relatedCompany": "Ara Group"
+    },
+    {
+      "name": "CEDI WEB",
+      "type": "Sistema empresarial interno",
+      "summary": "Solución orientada a mejorar la consulta, control y trazabilidad de información empresarial relacionada con procesos logísticos y operativos.",
+      "technologies": [
+        ".NET",
+        "SQL Server",
+        "JavaScript",
+        "APIs REST"
+      ],
+      "relatedCompany": "Ara Group"
+    },
+    {
+      "name": "WMS",
+      "type": "Sistema logístico",
+      "summary": "Participación en soluciones para control y trazabilidad de procesos logísticos, inventario y operación empresarial.",
+      "technologies": [
+        ".NET",
+        "SQL Server",
+        "JavaScript"
+      ],
+      "relatedCompany": "Ara Group"
+    },
+    {
+      "name": "CRM de Vértice",
+      "type": "Sistema comercial",
+      "summary": "Participación en el desarrollo y mantenimiento de soluciones orientadas a apoyar procesos comerciales y administrativos.",
+      "technologies": [
+        ".NET",
+        "SQL Server",
+        "React",
+        "Angular"
+      ],
+      "relatedCompany": "Ara Group"
+    },
+    {
+      "name": "Plataforma para venta de bienes adjudicados",
+      "type": "Sistema financiero",
+      "summary": "Actualización y mantenimiento de plataforma utilizada en el sector financiero para la venta de bienes adjudicados.",
+      "technologies": [
+        ".NET",
+        "SQL Server",
+        "Angular",
+        "Ionic"
+      ],
+      "relatedCompany": "GBSYS"
+    },
+    {
+      "name": "Plataforma de venta y alquiler de propiedades",
+      "type": "Aplicación web",
+      "summary": "Desarrollo de plataforma orientada a venta y alquiler de propiedades con integración bancaria.",
+      "technologies": [
+        "Angular",
+        "Node.js",
+        "MongoDB",
+        "Cypress"
+      ],
+      "relatedCompany": "Tecoop R.L."
+    },
+    {
+      "name": "EuroSif",
+      "type": "Sistema empresarial interno",
+      "summary": "Desarrollo de módulos para gestión de órdenes de producción y control de inventario.",
+      "technologies": [
+        "Java",
+        "Spring Web",
+        "Hibernate",
+        "AngularJS",
+        "Angular",
+        ".NET"
+      ],
+      "relatedCompany": "Euromobilia S.A."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Central",
+      "degree": "Licenciatura en Ingeniería Informática con énfasis en Gerencia Informática",
+      "location": "Costa Rica",
+      "startDate": "2026-01",
+      "endDate": null,
+      "period": "Enero 2026 - Actualidad",
+      "current": true
+    },
+    {
+      "institution": "Universidad de Costa Rica",
+      "degree": "Bachillerato en Informática Empresarial",
+      "location": "Costa Rica",
+      "startDate": null,
+      "endDate": "2020-02",
+      "period": "Febrero 2020",
+      "current": false
+    },
+    {
+      "institution": "Universidad Metropolitana Castro Carazo",
+      "degree": "Bachillerato en Contaduría Pública",
+      "location": "Costa Rica",
+      "startDate": null,
+      "endDate": "2013-02",
+      "period": "Febrero 2013",
+      "current": false
+    }
+  ],
+  "additionalExperience": [
+    {
+      "title": "Docente universitario en programación",
+      "description": "Experiencia explicando conceptos técnicos, lógica de programación, bases de datos y desarrollo web."
+    },
+    {
+      "title": "Tutor de trabajos finales de graduación",
+      "description": "Acompañamiento académico en áreas relacionadas con informática y desarrollo de software."
+    }
+  ],
+  "languages": [
+    {
+      "name": "Español",
+      "level": "Nativo"
+    },
+    {
+      "name": "Inglés",
+      "level": "A2"
+    }
+  ],
+  "metadata": {
+    "source": "CV actualizado",
+    "language": "es-CR",
+    "lastUpdated": "2026-05-15"
+  }
+}
