@@ -266,6 +266,92 @@
         });
     }
 
+    function createProjectLink(url, label, projectName) {
+        const link = createElement("a", {
+            className: "btn project-link",
+            href: url,
+            target: "_blank",
+            rel: "noopener",
+            textContent: label,
+            "aria-label": `${label} de ${projectName}`
+        });
+
+        return link;
+    }
+
+    function renderPersonalProjects(projects = []) {
+        const container = $("#personal-projects");
+        if (!container) return;
+
+        console.debug("renderPersonalProjects called, projects:", Array.isArray(projects) ? projects.length : typeof projects, projects);
+
+        clear(container);
+
+        projects.forEach((project) => {
+            const article = createElement("article", {
+                className: project.featured ? "project-item personal-project-item is-featured" : "project-item personal-project-item",
+                role: "listitem"
+            });
+
+            const header = createElement("div", { className: "project-card-header" });
+            header.appendChild(createElement("h3", {
+                className: "project-title",
+                textContent: project.name || ""
+            }));
+
+            if (project.status) {
+                header.appendChild(createElement("span", {
+                    className: "project-status",
+                    textContent: project.status
+                }));
+            }
+
+            article.appendChild(header);
+
+            if (project.summary) {
+                article.appendChild(createElement("p", {
+                    className: "project-summary",
+                    textContent: project.summary
+                }));
+            }
+
+            const technologies = formatList(project.technologies);
+            if (technologies) {
+                article.appendChild(createElement("p", {
+                    className: "project-tech",
+                    textContent: technologies
+                }));
+            }
+
+            if (project.notes) {
+                article.appendChild(createElement("p", {
+                    className: "project-note",
+                    textContent: project.notes
+                }));
+            }
+
+            const actions = createElement("div", {
+                className: "project-actions",
+                role: "group",
+                "aria-label": `Enlaces de ${project.name || "proyecto"}`
+            });
+
+            if (project.githubUrl) {
+                actions.appendChild(createProjectLink(project.githubUrl, "Ver código", project.name || "proyecto"));
+            }
+
+            if (project.demoUrl) {
+                actions.appendChild(createProjectLink(project.demoUrl, "Ver demo", project.name || "proyecto"));
+            }
+
+            if (actions.children.length) {
+                article.appendChild(actions);
+            }
+
+            container.appendChild(article);
+        });
+    }
+
     function renderAdditionalExperience(items = []) {
         const list = $("#additional-experience");
         if (!list) return;
