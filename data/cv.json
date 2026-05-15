@@ -169,6 +169,61 @@
       ]
     }
   ],
+  "personalProjects": [
+    {
+      "name": "Vaquita App",
+      "summary": "Aplicación personal para gestionar aportes compartidos y mantener información sincronizada en la nube, con una interfaz moderna y demo pública en GitHub Pages.",
+      "technologies": [
+        "React",
+        "Vite",
+        "Firebase",
+        "Tailwind CSS",
+        "Lucide React"
+      ],
+      "githubUrl": "https://github.com/arg3ni5/vaquita-app",
+      "demoUrl": "https://arg3ni5.github.io/vaquita-app/",
+      "status": "Destacado / Funcional",
+      "featured": true,
+      "notes": "Proyecto personal demostrable con GitHub Pages."
+    },
+    {
+      "name": "LearnTrackCenter",
+      "summary": "Sistema de gestión académica para administrar estudiantes, periodos y cursos, con almacenamiento en Firebase Firestore y despliegue público.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Firebase",
+        "React Router",
+        "i18next",
+        "Sass"
+      ],
+      "githubUrl": "https://github.com/arg3ni5/learntrackcenter",
+      "demoUrl": "https://arg3ni5.github.io/learntrackcenter/",
+      "status": "Funcional / En pausa",
+      "featured": true,
+      "notes": "Proyecto funcional, actualmente sin desarrollo activo."
+    },
+    {
+      "name": "Cerdyn",
+      "summary": "Aplicación avanzada de control de gastos con autenticación, gestión de datos y visualización de información financiera.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Supabase",
+        "PostgreSQL",
+        "Zustand",
+        "Styled Components",
+        "TanStack Query"
+      ],
+      "githubUrl": "https://github.com/arg3ni5/cerdyn",
+      "demoUrl": "https://arg3ni5.github.io/cerdyn/#/login",
+      "status": "Avanzado",
+      "featured": true,
+      "notes": "Fork avanzado con adaptaciones y mejoras propias"
+    }
+  ],
   "projects": [
     {
       "name": "AraNexus",
