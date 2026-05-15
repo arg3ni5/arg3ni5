@@ -391,6 +391,7 @@
         renderEducation(data.education);
         renderCertifications(data.certifications);
         renderLanguages(data.languages);
+        renderPersonalProjects(data.personalProjects);
         renderExperience(data.experience);
         renderProjects(data.projects);
         renderAdditionalExperience(data.additionalExperience);
